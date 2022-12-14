@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <style>
+        
+
+        #sb{
+            background-color: green;
+            color:white;
+            height:35px;
+            width:100px;
+            border-radius: 25px;
+        }
+        #rt{
+            background-color: red;
+            color:white;
+            height:35px;
+            width:100px;
+            border-radius: 25px;
+        }
+        body{
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: 1400px 1000px;
+            z-index: -2;
+            
+        }
+        table{
+           color: aliceblue;
+           background-color: rgba(0,0,0,0.7);
+        }
+    </style>
+  
+</head>
+<body><center><h1>Admission Form</h1> </center>
+    
+    <hr>
+    
+    <form>
+        <table align="center" cellspacing="10">
+            <tr><td><label for="sn">Student Name:</label></td>
+            <td></label><input type="text" id="sn" placeholder="Student Name" required/></td>
+            </tr>
+            <tr>
+                <td><label for="fn">Father's Name:</label></td>
+                <td><input type="text" id="fn" placeholder="Father's Name" required/></td>
+            </tr>
+            <tr>
+                <td><label for="mn">Mother's Name:</label></td>
+                <td><input type="text" id="mn"placeholder="Mother's Name" required/></td>
+            </tr>
+            <tr>
+                <td><label for="adn">Aadhar Card No:</label></td>
+                <td> <input type="number" id="adn"placeholder="Aadhar Card No" required/></td>
+            </tr>
+            <tr>
+                <td><label for="db">Date of Birth:</label></td>
+                <td><input type="date" id="db"placeholder="Date of Birt"/ required></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td><input type="radio" id="male" name="gender" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" required>
+                    <label for="female">Female</label></td>
+            </tr>
+            <tr>
+                <td><label for="pn">Phone:</label></td>
+                <td><input type="tel" id="pn"placeholder="Phone" required/></td>
+            </tr>
+            <tr>
+                <td><label for="pb">Place of Birth:</label></td>
+                <td><input type="text" id="pb"placeholder="Place of Birth" required/></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city"placeholder="City" required/></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td> <input type="text" id="state"placeholder="State" required/></td>
+            </tr>
+            <tr>
+                <td><label for="dis">Physical Disability (if any):</label></td>
+                <td><input type="text" id="dis" placeholder="Physical Disability (if any)" required/></td>
+            </tr>
+            <tr>
+                <td><label for="agree">I accept the terms and conditions</label></td>
+                <td><input type="checkbox" id="agree" required></td>
+            </tr>
+            <tr> <td></td>
+                <td><input type="reset" id="rt"> <input type="Submit" id="sb"></td>
+
+        </table>
+    </form>
+    <hr>
+</body>
+</html>
